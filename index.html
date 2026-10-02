@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interflo Design — Brand, product and experience.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Serif:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Interflo Design — Coming Soon</title>
+
+  <style>
+    :root {
+      --bg: #050505;
+      --text: #f5f5f2;
+      --muted: #92928d;
+      --accent: #e9d84a;
+      --line: rgba(255, 255, 255, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Montserrat", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      padding: 34px 42px 30px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 22px;
+    }
+
+    .logo {
+      display: block;
+      width: 142px;
+      height: auto;
+    }
+
+    .header-note {
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8vh 0;
+    }
+
+    .content {
+      width: min(1380px, 100%);
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 32px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-family: "Noto Serif", Georgia, serif;
+      max-width: 1280px;
+      font-size: clamp(56px, 9.3vw, 138px);
+      line-height: 0.88;
+      letter-spacing: -0.075em;
+      font-weight: 650;
+    }
+
+    .lower {
+      display: grid;
+      grid-template-columns: minmax(220px, 0.8fr) minmax(280px, 1.2fr);
+      gap: 60px;
+      max-width: 900px;
+      margin-top: 58px;
+      margin-left: 8px;
+    }
+
+    .services {
+      font-size: 13px;
+      line-height: 1.9;
+      color: var(--muted);
+    }
+
+    .services strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .statement {
+      font-size: clamp(20px, 2vw, 27px);
+      line-height: 1.25;
+      letter-spacing: -0.035em;
+      max-width: 530px;
+    }
+
+    .inline-email {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 2px;
+    }
+
+    .inline-email:hover {
+      opacity: 0.65;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    footer a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--text);
+      padding-bottom: 2px;
+    }
+
+    footer a:hover {
+      opacity: 0.6;
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        padding: 24px 22px 24px;
+      }
+
+      header {
+        padding-bottom: 17px;
+      }
+
+      .logo {
+        width: 120px;
+      }
+
+      .header-note {
+        display: none;
+      }
+
+      main {
+        padding: 12vh 0;
+      }
+
+      h1 {
+        font-size: clamp(55px, 17vw, 100px);
+      }
+
+      .lower {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 45px;
+        margin-left: 0;
+      }
+
+      .statement {
+        max-width: 440px;
+      }
+
+      footer {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <header>
+      <img
+        class="logo"
+        src="data:image/png;base64,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"
+        alt="Interflo"
+      >
+      <div class="header-note">Brand · Product · Experience</div>
+    </header>
+
+    <main>
+      <section class="content">
+        <div class="eyebrow">Independent design practice</div>
+
+        <h1>
+          Designing brands,<br>
+          products &amp; <span class="highlight">experiences.</span>
+        </h1>
+
+        <div class="lower">
+          <div class="services">
+            <strong>Brand</strong><br>
+            Product<br>
+            Experience
+          </div>
+
+          <p class="statement">
+            A new home for Interflo Design is taking shape.
+            The full site is coming soon.<br><br>
+            In the meanwhile, you can connect with me at
+            <a class="inline-email" href="mailto:ankur@interflodesign.com">ankur@interflodesign.com</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Interflo Design</span>
+      <a href="mailto:ankur@interflodesign.com">ankur@interflodesign.com</a>
+    </footer>
+
+  </div>
+</body>
+</html>
